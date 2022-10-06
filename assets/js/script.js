@@ -13,9 +13,9 @@ document.addEventListener("DOMContentLoaded",()=>{
     const puntos = document.querySelector(".puntos");
     let acumulador = 0;
 
-    // letras.forEach((letra)=>{
-    //     letra.classList.add("letras_deshabilitadas");
-    // });
+    letras.forEach((letra)=>{
+        letra.classList.add("letras_deshabilitadas");
+    });
         
 
     //Cuenta regresiva
