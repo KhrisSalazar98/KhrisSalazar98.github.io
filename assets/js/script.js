@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded",()=>{
 
     function formatoConteo() {
 
-        let time_minutes = 8; // Value in minutes
+        let time_minutes = 12; // Value in minutes
         let time_seconds = 0; // Value in seconds
 
         let duration = time_minutes * 60 + time_seconds;
