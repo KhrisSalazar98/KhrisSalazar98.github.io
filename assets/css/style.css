@@ -217,21 +217,21 @@ h1{
     }
 }
 
-@media (min-width: 360px) {
+@media (min-width: 358px) {
     
     .btn_letra, .btn_letra_click, .palabra_correcta{
-        width: 14px;    
+        width: 14px; 
     }
 }
 
-@media (min-width: 380px) {
+@media (min-width: 374px) {
     
     .btn_letra, .btn_letra_click, .palabra_correcta{
-        width: 15px;
+        width: 15px;    
     }
 }
 
-@media (min-width: 400px) {
+@media (min-width: 390px) {
     
     .btn_letra, .btn_letra_click, .palabra_correcta{
         width: 16px;
@@ -244,14 +244,14 @@ h1{
     }
 }
 
-@media (min-width: 415px) {
+@media (min-width: 406px) {
     
     .btn_letra, .btn_letra_click, .palabra_correcta{
         width: 17px;  
     }
 }
 
-@media (min-width: 430px) {
+@media (min-width: 422px) {
     
     .btn_letra, .btn_letra_click, .palabra_correcta{
         width: var(--font18);
@@ -260,21 +260,21 @@ h1{
     }
 }
 
-@media (min-width: 440px) {
+@media (min-width: 438px) {
     
     .btn_letra, .btn_letra_click, .palabra_correcta{
         width: 19px;
     }
 }
 
-@media (min-width: 460px) {
+@media (min-width: 454px) {
     
     .btn_letra, .btn_letra_click, .palabra_correcta{
         width: 20px;     
     }
 }
 
-@media (min-width: 480px) {
+@media (min-width: 470px) {
     
     .btn_letra, .btn_letra_click, .palabra_correcta{
         width: 21px; 
@@ -282,7 +282,7 @@ h1{
 
 }
 
-@media (min-width: 500px) {
+@media (min-width: 486px) {
     
     .btn_letra, .btn_letra_click, .palabra_correcta{
         width: 22px; 
@@ -290,7 +290,42 @@ h1{
 
 }
 
-@media (min-width: 520px) {
+@media (min-width: 502px) {
+    
+    .btn_letra, .btn_letra_click, .palabra_correcta{
+        width: 23px;    
+    }
+}
+
+@media (min-width: 518px) {
+    
+    .btn_letra, .btn_letra_click, .palabra_correcta{
+        width: 24px;    
+    }
+}
+
+@media (min-width: 534px) {
+    
+    .btn_letra, .btn_letra_click, .palabra_correcta{
+        width: 25px;    
+    }
+}
+
+@media (min-width: 550px) {
+    
+    .btn_letra, .btn_letra_click, .palabra_correcta{
+        width: 26px;    
+    }
+}
+
+@media (min-width: 566px) {
+    
+    .btn_letra, .btn_letra_click, .palabra_correcta{
+        width: 27px;    
+    }
+}
+
+@media (min-width: 576px) {
     
     .btn_letra, .btn_letra_click, .palabra_correcta{
         width: 23px;    

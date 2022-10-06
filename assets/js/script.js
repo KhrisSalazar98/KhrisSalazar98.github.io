@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded",()=>{
 
                 setTimeout(() => {
                     location. reload();
-                }, 3000);
+                }, 5000);
                         
                         
             }
@@ -265,7 +265,7 @@ document.addEventListener("DOMContentLoaded",()=>{
 
             setTimeout(() => {
                 location. reload();
-            }, 3000);
+            }, 5000);
             
             
         }
