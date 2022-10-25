@@ -1,7 +1,6 @@
 :root{
 
-    --font5: 5px;
-    --font15: 15px;
+    --font16: 16px;
     --font18: 18px;
     --font20: 20px;
     --font30: 30px;
@@ -9,363 +8,259 @@
     --blanco: #fff;
     --negro: #000;
 
-    --colorClaro: #ff6201;
-    --colorCentroIzquierda: #e05200;
-    --colorIntermedio: #cb4600;
-    --colorCentroDerecha: #b13800;
-    --colorOscuro: #9a2b00;
+    --colorClaro: #d000ff;
+    --colorCentroIzquierda: #a600cc;
+    --colorIntermedio: #8d00ae;
+    --colorCentroDerecha: #70008b;
+    --colorOscuro: #4c0060;
 }
 
-/* Selectores elementos HTML */
-
+/* Selectores elementos HTML*/
 body{
-
-    font-family: 'Kalam', cursive;
+    font-family: 'Handlee', cursive;
 }
 
-h1{
-    color: var(--blanco);
-    background: linear-gradient(90deg, rgba(255,98,1,1) 0%, rgba(154,43,0,1) 100%);
-    box-shadow: 0px 7px 13px 8px var(--colorOscuro);
+header,.modal-header{
+    background: linear-gradient(90deg, rgba(105,2,128,1) 0%, rgba(32,24,24,1) 100%);
+    box-shadow: 1px 6px 15px 5px #000000;
 }
+
+/* Selectores de clases Bootstrap */
+
+.modal-header, .modal-footer{
+    border: none;
+}
+
+.form-check-input:checked {
+    background-color: var(--colorCentroIzquierda);
+    border-color: var(--colorOscuro);
+}
+
+.form-check-input:focus {
+    box-shadow: none;
+}
+
 
 /* Selectores de clases */
+
+.btn_jugar{
+    background-color: var(--colorOscuro);
+    color: var(--blanco);
+    border: solid 3px var(--blanco);
+}
 
 .fs-18{
     font-size: var(--font18);
 }
 
-.colorClaro{
-    color: var(--colorClaro);
+.fs-20{
+    font-size: var(--font20);
+}
+
+.fs-30{
+    font-size: var(--font30);
+}
+
+.colorCentroIzquierda{
+    color: var(--colorCentroIzquierda);
 }
 
 .colorOscuro{
     color: var(--colorOscuro);
 }
 
-.container_letras{
-    border: 3px solid var(--colorOscuro);
-    border-radius: var(--font15);
-    box-shadow: 1px 1px 13px 1px rgba(154,43,0,1);
+.colorCentroIzquierda2{
+    color: #9a5510;
 }
 
-.cuenta_regresiva{
-    font-size: var(--font20);
-    color: var(--colorOscuro)
+.colorOscuro2{
+    color: #4e4032;
 }
 
-.btn_jugar{
-    color: var(--blanco);
-    background-color: var(--colorOscuro);
-    border: solid 3px transparent;
-    box-shadow: 0px 3px 13px 0px var(--colorIntermedio);
-    transition: all 0.3s;
-}
-
-.btn_jugar:hover{
-    background-color: var(--colorCentroIzquierda);
-    box-shadow: 0px 3px 13px 0px var(--colorOscuro);
-}
-
-.btn_jugar_presionado{
-    color: var(--blanco);
-    background-color: var(--colorCentroIzquierda);
-    border: solid 3px transparent;
-    box-shadow: 0px 3px 13px 0px var(--colorOscuro);
-    opacity: 0.7;
-    pointer-events: none;
-}
-
-
-.btn_letra, .btn_letra_click, .palabra_correcta{
-    width: var(--font30);
-    height: var(--font30);
-}
-
-.btn_letra, .btn_letra_click, .palabra_correcta{
-    border-radius: var(--font5);
-}
-
-.btn_letra_click, .palabra_correcta{
-    color: var(--blanco);
-}
-
-.btn_letra{
-    
+.color_oscuro{
     color: var(--colorOscuro);
-    background-color: var(--blanco);
-    border: solid 2px var(--colorOscuro);
-    transition: all 0.3s;
 }
 
-.btn_letra:hover{
-
-    color: var(--blanco);
-    background-color: var(--colorOscuro);
-
+.puntaje_maximo{
+    font-weight: 900;
 }
 
-.btn_letra_click{
-
-    background-color: var(--colorIntermedio);
-    border: solid 2px var(--colorIntermedio);
-}
-
-.palabra_correcta{
-   background-color: var(--colorClaro);
-   border: solid 2px var(--colorClaro);
-   box-shadow: 0px 3px 13px 0px var(--colorOscuro);
-   pointer-events: none;
-   animation: animacion_palabra_correcta 3s ease infinite;
-}
-
-@keyframes animacion_palabra_correcta {
-
-    0% {
-
-        background-color: var(--colorClaro);
-        border: solid 2px var(--colorClaro);
-
-    }
-
-    20% {
-        background-color: var(--colorCentroIzquierda);
-        border: solid 2px var(--colorCentroIzquierda)
-    }
-
-    40% {
-        background-color: var(--colorIntermedio);
-        border: solid 2px var(--colorIntermedio);
-    }
-
-    60% {
-        background-color: var(--colorCentroDerecha);
-        border: solid 2px var(--colorCentroDerecha);
-    }
-
-    80% {
-        background-color: var(--colorOscuro);
-        border: solid 2px var(--colorOscuro)
-    }
-
-    100% {
-        background-color: var(--colorClaro);
-        border: solid 2px var(--colorClaro)
-    }
-    
-}
-
-.letras_deshabilitadas{
-    opacity: 0.5;
-    pointer-events: none;
-}
-
-.txt_nombres{
-    color: var(--colorOscuro);
+.txt_personaje{
     font-size: var(--font18);
 }
 
-.nombres_encontrados li::marker{
-    color: var(--colorOscuro);
+.img_personaje{
+    width: 110px;
+    height: 100px;
+    box-shadow: 1px 3px 15px 5px var(--negro);
 }
 
+.btn_comenzarPartida{
+    border: solid 3px var(--colorIntermedio);
+    background-color: var(--colorIntermedio);
+    color: var(--blanco);
+    box-shadow: 0px 3px 15px 1px var(--negro);
+    transition: all 0.3s;
+}
 
-/* Media Queries */
+.btn_comenzarPartida:hover{
+    background-color: var(--blanco);
+    color: var(--colorIntermedio);
+}
+
+.txt_personaje_j1, .puntaje_j1{
+    color: var(--colorIntermedio); 
+}
+
+.txt_personaje_j2, .puntaje_j2{
+    color: #7d4d1d;
+}
+
+.btn_x_o{
+    height: 110px;
+    background-color: var(--blanco);
+    font-size: 85px;
+}
+
+.border_bottom_right{
+    border-bottom: solid 6px var(--negro);
+    border-right: solid 3px var(--negro);
+    border-top: none;
+    border-left: none;
+}
+
+.border_bottom_right_left{
+    border-bottom: solid 6px var(--negro);
+    border-right: solid 3px var(--negro);
+    border-left: solid 3px var(--negro);
+}
+
+.border_bottom_left{
+    border-bottom: solid 6px var(--negro);
+    border-left: solid 3px var(--negro);
+}
+
+.border_right{
+    border-right: solid 3px var(--negro);
+}
+
+.border_right_left{
+    border-left: solid 3px var(--negro);
+    border-right: solid 3px var(--negro);
+}
+
+.border_left{
+    border-left: solid 3px var(--negro);
+}
+
+.btn_deshabilidado{
+    pointer-events: none;
+}
+
+.j1, .j2 ,.j1_ganador, .j2_ganador{
+    font-weight: 900;
+}
+
+.j1{
+    animation: parpadeo_j1 4s ease infinite;
+}
+
+@keyframes parpadeo_j1 {
+    
+    0%{
+        color: var(--colorOscuro);
+    }
+
+    20%{
+        color: var(--colorCentroDerecha);
+    }
+
+    40%{
+        color: var(--colorIntermedio);
+    }
+
+    60%{
+        color: var(--colorCentroIzquierda);
+    }
+
+    80%{
+        color: var(--colorClaro);
+    }
+
+    100%{
+        color: var(--colorOscuro);
+    }
+}
+
+.j2{
+    animation: parpadeo_j2 4s ease infinite;
+}
+
+@keyframes parpadeo_j2{
+
+    0%{
+        color: #4e4032;
+    }
+
+    20%{
+        color: #674727;
+    }
+
+    40%{
+        color: #7d4d1d;
+    }
+
+    60%{
+        color: #9a5510;
+    }
+
+    80%{
+        color: #b65d03;
+    }
+
+    100%{
+        color:#4e4032; 
+    }
+}
+
+.j1_ganador{
+    color: var(--colorCentroIzquierda);
+    background-color: var(--colorOscuro);
+}
+
+.j2_ganador{
+    color: #bababa;
+    background-color: #4e4032;
+}
 
 @media (min-width: 280px) {
-    
-    .btn_letra, .btn_letra_click, .palabra_correcta{
-        width: 9px;
-        height: 30px;
-        font-size: 8px;
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-    
-    .txt_nombres,.nombres_encontrados{
-        font-size: var(--font15);
+
+    .j1_ganador, .j2_ganador{
+        width: 100% !important;
+        border-radius: 50%;
     }
 }
 
-@media (min-width: 300px) {
-    
-    .btn_letra, .btn_letra_click, .palabra_correcta{
-        width: 10px;
-        font-size: 9px;
-        
-    }
-}
+@media (min-width: 400px) {
 
-@media (min-width: 310px) {
-    
-    .btn_letra, .btn_letra_click, .palabra_correcta{
-        width: 11px; 
-    }
-}
-
-@media (min-width: 330px) {
-    
-    .btn_letra, .btn_letra_click, .palabra_correcta{
-        width: 12px; 
-    }
-}
-
-@media (min-width: 345px) {
-    
-    .btn_letra, .btn_letra_click, .palabra_correcta{
-        width: 13px; 
-    }
-}
-
-@media (min-width: 358px) {
-    
-    .btn_letra, .btn_letra_click, .palabra_correcta{
-        width: 14px; 
-    }
-}
-
-@media (min-width: 374px) {
-    
-    .btn_letra, .btn_letra_click, .palabra_correcta{
-        width: 15px;    
-    }
-}
-
-@media (min-width: 390px) {
-    
-    .btn_letra, .btn_letra_click, .palabra_correcta{
-        width: 16px;
-        font-size: var(--font15);
-        
-    }
-
-    .txt_nombres,.nombres_encontrados{
-        font-size: var(--font18);
-    }
-}
-
-@media (min-width: 406px) {
-    
-    .btn_letra, .btn_letra_click, .palabra_correcta{
-        width: 17px;  
-    }
-}
-
-@media (min-width: 422px) {
-    
-    .btn_letra, .btn_letra_click, .palabra_correcta{
-        width: var(--font18);
-        font-size: var(--font15);
-        
-    }
-}
-
-@media (min-width: 438px) {
-    
-    .btn_letra, .btn_letra_click, .palabra_correcta{
-        width: 19px;
-    }
-}
-
-@media (min-width: 454px) {
-    
-    .btn_letra, .btn_letra_click, .palabra_correcta{
-        width: 20px;     
-    }
-}
-
-@media (min-width: 470px) {
-    
-    .btn_letra, .btn_letra_click, .palabra_correcta{
-        width: 21px; 
+    .j1_ganador, .j2_ganador{
+        width: 100px !important;
     }
 
 }
 
-@media (min-width: 486px) {
-    
-    .btn_letra, .btn_letra_click, .palabra_correcta{
-        width: 22px; 
-    }
+@media (min-width: 576px) {}
 
-}
-
-@media (min-width: 502px) {
-    
-    .btn_letra, .btn_letra_click, .palabra_correcta{
-        width: 23px;    
-    }
-}
-
-@media (min-width: 518px) {
-    
-    .btn_letra, .btn_letra_click, .palabra_correcta{
-        width: 24px;    
-    }
-}
-
-@media (min-width: 534px) {
-    
-    .btn_letra, .btn_letra_click, .palabra_correcta{
-        width: 25px;    
-    }
-}
-
-@media (min-width: 550px) {
-    
-    .btn_letra, .btn_letra_click, .palabra_correcta{
-        width: 26px;    
-    }
-}
-
-@media (min-width: 566px) {
-    
-    .btn_letra, .btn_letra_click, .palabra_correcta{
-        width: 27px;    
-    }
-}
-
-@media (min-width: 576px) {
-    
-    .btn_letra, .btn_letra_click, .palabra_correcta{
-        width: 23px;    
-    }
-}
-
-@media (min-width: 768px) { 
-    
-    .btn_letra, .btn_letra_click, .palabra_correcta{
-        width: var(--font30);    
-    }
-
-}
+@media (min-width: 768px) {}
 
 @media (min-width: 992px) {
-    
-    .btn_letra, .btn_letra_click, .palabra_correcta{
-        width: 21px; 
-    }
 
-    .txt_nombres, .nombres_encontrados{
-        font-size: 13px;
+    .j1_ganador, .j2_ganador{
+        width: 130px !important;
     }
 
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px) {}
 
-    .btn_letra, .btn_letra_click, .palabra_correcta{
-        width: 24px; 
-    }
-
-    .txt_nombres, .nombres_encontrados{
-        font-size: var(--font15);
-    }
-}
-
-@media (min-width: 1400px) {
-
-    .btn_letra, .btn_letra_click, .palabra_correcta{
-        width: var(--font30); 
-    }
-}
+@media (min-width: 1400px) {}
