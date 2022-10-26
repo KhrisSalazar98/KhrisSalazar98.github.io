@@ -153,13 +153,9 @@ header,.modal-header{
     border-left: solid 3px var(--negro);
 }
 
-.btn_deshabilidado{
-    pointer-events: none;
-}
+.btn_deshabilidado{ pointer-events: none;}
 
-.j1, .j2 ,.j1_ganador, .j2_ganador{
-    font-weight: 900;
-}
+.j1, .j2 ,.j1_ganador, .j2_ganador{ font-weight: 900; }
 
 .j1{
     animation: parpadeo_j1 4s ease infinite;
@@ -234,7 +230,6 @@ header,.modal-header{
 }
 
 @media (min-width: 280px) {
-
     .j1_ganador, .j2_ganador{
         width: 100% !important;
         border-radius: 50%;
@@ -242,25 +237,9 @@ header,.modal-header{
 }
 
 @media (min-width: 400px) {
-
-    .j1_ganador, .j2_ganador{
-        width: 100px !important;
-    }
-
+    .j1_ganador, .j2_ganador{ width: 100px !important;}
 }
-
-@media (min-width: 576px) {}
-
-@media (min-width: 768px) {}
 
 @media (min-width: 992px) {
-
-    .j1_ganador, .j2_ganador{
-        width: 130px !important;
-    }
-
+    .j1_ganador, .j2_ganador{width: 130px !important;}
 }
-
-@media (min-width: 1200px) {}
-
-@media (min-width: 1400px) {}
