@@ -8,7 +8,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/6b267a8a1d.js" crossorigin="anonymous"></script>
@@ -19,174 +19,75 @@
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-    <title>Kira vs Neji</title>
+    <title>Minijuegos Cris</title>
 </head>
 <body>
     <!-- Header -->
-    <header>
-        <div class="row w-100">
-            
-            <div class="col-12 col-sm-4 d-flex justify-content-center align-items-center mt-3 mt-sm-0">
-                <button class="rounded-pill py-2 px-3 btn_jugar fs-18" type="button" data-bs-toggle="modal" data-bs-target="#modalIniciarJuego"><strong>Iniciar Partida</strong></button>
-            </div>
-            
-            <div class="col-12 col-sm-4 text-center">
-                <h1 class="py-4 text-white">Tres en Raya(Kira vs Neji)</h1>
-            </div>
-
-        </div>
-
+    <header class="gradient_principal">
+        <h1 class="text-center py-4 titulo"><strong><i class="fa-solid fa-chess-board fa-sm"></i> <i class="fa-solid fa-heart d-none d-sm-inline"></i> <span class="tituloLetra titituloLetraInicial">M</span><span class="tituloLetra">i</span><span class="tituloLetra">n</span><span class="tituloLetra">i</span><span class="tituloLetra">j</span><span class="tituloLetra">u</span><span class="tituloLetra">e</span><span class="tituloLetra">g</span><span class="tituloLetra">o</span><span class="tituloLetra">s</span> <span class="tituloLetra">C</span><span class="tituloLetra">r</span><span class="tituloLetra">i</span><span class="tituloLetra">s</span> <i class="fa-solid fa-diamond d-none d-sm-inline"></i> <i class="fa-solid fa-dice-d20 fa-sm"></i></strong></h1>
     </header>
 
     <!-- Contenido -->
-    <section>
+    <main>
+        <br>
+        <div class="container mt-4">
+            <div class="row justify-content-center">
+                <div class="col-10 col-sm-12 rounded-3 container_opcs">
+                    
+                    <div class="row p-3">
 
-        <div class="container">
-            
-            <div class="row mt-4">
-
-                <div class="d-sm-none">
-                    <p class="text-center color_oscuro"><strong>Puntaje Máximo: <span class="puntaje_maximo_mobile">?</span></strong></p>
-                </div>
-
-                <!-- Puntos de Kira -->
-                <div class="col-6 col-sm-5 text-center">
-                    <p class="fs-18 txt_personaje_j1"><strong>Kira (J1)</strong></p>
-                    <img class="img_personaje mb-3 rounded-circle" src="assets/img/Kira_Senju_normal.png" alt="Kira Senju"><br>
-                    <span><strong class="fs-30 puntaje_j1">0</strong></span>
-                </div>
-
-                <!-- Puntaje maximo -->
-                <div class="col-sm-2 d-none d-sm-block text-center">
-                    <p class="fs-18 text-center color_oscuro">
-                        <strong>Puntaje Máximo</strong>
-                    </p>
-                    <span class="fs-30 color_oscuro puntaje_maximo">?</span>
-                </div>
-
-                <!-- Puntos de Neji -->
-                <div class="col-6 col-sm-5 text-center">
-                    <p class="fs-18 txt_personaje_j2"><strong>Neji (J2)</strong></p>
-                    <img class="img_personaje mb-3 rounded-circle" src="assets/img/Neji_Hyuga_normal.png" alt="Neji Hyuga"><br>
-                    <span><strong class="fs-30 puntaje_j2">0</strong></span>
-                </div>   
-                
-            </div>
-
-
-            <div class="row mt-5 px-4">
-                
-                <!-- Fila 1  -->
-                <div class="col-4 col-sm-4 px-0 text-center border_bottom_right">
-                    <button class="w-100 border-0 btn_x_o" type="button">*</button>
-                </div>
-
-                <div class="col-4 col-sm-4 px-0 text-center border_bottom_right_left">
-                    <button class="w-100 border-0 btn_x_o" type="button">*</button>
-                </div>
-
-                <div class="col-4 col-sm-4 px-0 text-center border_bottom_left">
-                    <button class="w-100 border-0 btn_x_o" type="button">*</button>
-                </div>
-
-                <!-- Fila 2  -->
-                <div class="col-4 col-sm-4 px-0 text-center border_bottom_right">
-                    <button class="w-100 border-0 btn_x_o" type="button">*</button>
-                </div>
-
-                <div class="col-4 col-sm-4 px-0 text-center border_bottom_right_left">
-                    <button class="w-100 border-0 btn_x_o" type="button">*</button>
-                </div>
-
-                <div class="col-4 col-sm-4 px-0 text-center border_bottom_left">
-                    <button class="w-100 border-0 btn_x_o" type="button">*</button>
-                </div>
-
-                <!-- Fila 3  -->
-                <div class="col-4 col-sm-4 px-0 text-center border_right">
-                    <button class="w-100 border-0 btn_x_o" type="button">*</button>
-                </div>
-
-                <div class="col-4 col-sm-4 px-0 text-center border_right_left">
-                    <button class="w-100 border-0 btn_x_o" type="button">*</button>
-                </div>
-
-                <div class="col-4 col-sm-4 px-0 text-center border_left">
-                    <button class="w-100 border-0 btn_x_o" type="button">*</button>
-                </div>
-
-                
-            </div>
-
-
-            <!-- Modales -->
-
-            <!-- Modal Comenzar Partida -->
-            <div class="modal fade" id="modalIniciarJuego" tabindex="-1" aria-labelledby="IniciarJuego" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Duración de la partida</h1>
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <!-- Sopa de Letras -->
+                        <div class="col-12 col-sm-6 my-3 opc_miniJuego">
+                            <a href="sopaDeLetras.html" aria-label="Jugar Sopa de Letras">
+                                <div class="rounded-2 text-center gradient_sopaDeLetras">
+                                    <span class="fs-20 text-white"><i class="fa-solid fa-glasses"></i> Sopa de Letras <i class="fa-solid fa-pencil"></i></span>
+                                    <img class="img-fluid rounded-2" src="assets/img/img_sopaDeLetras.png" alt="Sopa de Letras">
+                                </div>
+                            </a>
                         </div>
-                        <div class="modal-body mt-3">
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                  <strong>2 Puntos</strong>
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                                <label class="form-check-label" for="flexRadioDefault2">
-                                    <strong>3 Puntos</strong>
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
-                                <label class="form-check-label" for="flexRadioDefault3">
-                                    <strong>5 Puntos</strong>
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
-                                <label class="form-check-label" for="flexRadioDefault4">
-                                    <strong>10 Puntos</strong>
-                                </label>
-                            </div>
 
+                        <!-- Tres en raya -->
+                        <div class="col-12 col-sm-6 my-3 opc_miniJuego">
+                            <a href="tresEnRaya.html" aria-label="Jugar Tres En Raya">
+                                <div class="rounded-2 text-center gradient_tresEnRaya">
+                                    <span class="fs-20 text-white"><i class="fa-solid fa-xmark fa-lg"></i> Tres En Raya <i class="fa-regular fa-circle"></i></span>
+                                    <img class="img-fluid rounded-2" src="assets/img/img_tresEnRaya.png" alt="Tres en Raya">
+                                </div>
+                            </a>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="rounded-pill px-3 py-2 opacity-50 btn_deshabilidado btn_comenzarPartida" data-bs-dismiss="modal"><strong>¡Comenzar!</strong></button>
+
+                        <!-- Memorice -->
+                        <div class="col-12 col-sm-6 my-3 opc_miniJuego">
+                            <a href="momorice.html" aria-label="Jugar Memorice">
+                                <div class="rounded-2 text-center gradient_memorice">
+                                    <span class="fs-20 text-white"><i class="fa-solid fa-diamond"></i> Memorice <i class="fa-regular fa-heart"></i></span>
+                                    <img class="img-fluid rounded-2" src="assets/img/img_memorice.png" alt="Memorice">
+                                </div>
+                            </a>
                         </div>
+
+                        <!-- Simón dice -->
+                        <div class="col-12 col-sm-6 my-3 opc_miniJuego">
+                            <a href="simonDice.html" aria-label="Jugar Simón Dice">
+                                <div class="rounded-2 text-center gradient_simonDice">
+                                    <span class="fs-20 text-white"><i class="fa-solid fa-table-cells-large"></i> Simón Dice <i class="fa-solid fa-eye"></i></span>
+                                    <img class="img-fluid rounded-2" src="assets/img/img_simonDice.png" alt="Simón Dice">
+                                </div>
+                            </a>
+                        </div>
+
+                        
+
                     </div>
                 </div>
             </div>
-            
-            <!-- Modal Mensajes Emergentes -->
-            <div class="modal fade" id="modalMensajeEmergente" tabindex="-1" aria-labelledby="MensajeEmergente" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5 text-white tituloMensajeEmergente" id="exampleModalLabel">Duración de la partida</h1>
-                        </div>
-                        <div class="modal-body mt-3">
-                            
-                            <p class="text-center fs-18 contenidoMensajeEmergente">Cuerpo de modal Emergente</p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
-
-    </section>
-
-
+        
+    </main>
+     
     <!-- JS Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="assets/js/script.js"></script>
-
+    
+    <script type="text/javascript" src="assets/js/animacionTitulo.js"></script>
 </body>
 </html>
